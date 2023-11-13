@@ -20,43 +20,43 @@ import { Context } from './store/Context'
 import photo from './images/spine.jpg'
 
 // props: image
-function FloatImageCol(props) {
-    return (
-        <Col span={12}>
-            <Row justify='center'>
-            <motion.div 
-                    initial={{y: 300, opacity: 0}} 
-                    whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
-                    viewport={{once: true}}>
-                <Image height={400} preview={false} src={props.image} style={{'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></Image>
-            </motion.div>
-            </Row>
-        </Col>
-    )
-}
+// function FloatImageCol(props) {
+//     return (
+//         <Col span={12}>
+//             <Row justify='center'>
+//             <motion.div 
+//                     initial={{y: 300, opacity: 0}} 
+//                     whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
+//                     viewport={{once: true}}>
+//                 <Image height={400} preview={false} src={props.image} style={{'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></Image>
+//             </motion.div>
+//             </Row>
+//         </Col>
+//     )
+// }
 
 // props title, text
-function FloatTextCol(props) {
-    return (
-        <Col span={12}>
-            <motion.div 
-                    initial={{y: 300, opacity: 0}} 
-                    whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
-                    viewport={{once: true}}>
-                <Row justify='center' style={{'padding': '0px 50px'}}>
-                    <Typography.Title>
-                        {props.title}
-                    </Typography.Title>
-                </Row>
-                <Row justify='center' style={{'padding': '0px 50px'}}>
-                    <Typography style={{'fontSize': '16px'}}>
-                        {props.text}
-                    </Typography>
-                </Row>
-            </motion.div>
-        </Col>
-    )
-}
+// function FloatTextCol(props) {
+//     return (
+//         <Col span={12}>
+//             <motion.div 
+//                     initial={{y: 300, opacity: 0}} 
+//                     whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
+//                     viewport={{once: true}}>
+//                 <Row justify='center' style={{'padding': '0px 50px'}}>
+//                     <Typography.Title>
+//                         {props.title}
+//                     </Typography.Title>
+//                 </Row>
+//                 <Row justify='center' style={{'padding': '0px 50px'}}>
+//                     <Typography style={{'fontSize': '16px'}}>
+//                         {props.text}
+//                     </Typography>
+//                 </Row>
+//             </motion.div>
+//         </Col>
+//     )
+// }
 
 // props: sectionItem, backgroundColor
 // function SectionItemImageOnTheLeft(props) {
@@ -103,7 +103,7 @@ function FloatTextCol(props) {
 
 
 function Desktop() {
-    const {state, dispatch} = useContext(Context)
+    // const {state, dispatch} = useContext(Context)
 
     return (
         <Layout style={{'minWidth': '1000px'}}>
