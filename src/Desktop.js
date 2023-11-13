@@ -89,23 +89,23 @@ function SectionItemImageOnTheRight(props) {
 }
 
 // props: sectionList
-function SectionList(props) {
-    return (
-        <>
-        {
-            props.sectionList.map((sectionItem, index) => {
-                return (
-                    index % 2 === 0?
-                        <SectionItemImageOnTheLeft sectionItem={sectionItem} backgroundColor={'white'} />
-                        :
-                        <SectionItemImageOnTheRight sectionItem={sectionItem} backgroundColor={null} />
-                )
+// function SectionList(props) {
+//     return (
+//         <>
+//         {
+//             props.sectionList.map((sectionItem, index) => {
+//                 return (
+//                     index % 2 === 0?
+//                         <SectionItemImageOnTheLeft sectionItem={sectionItem} backgroundColor={'white'} />
+//                         :
+//                         <SectionItemImageOnTheRight sectionItem={sectionItem} backgroundColor={null} />
+//                 )
 
-            })
-        }
-        </>
-    )
-}
+//             })
+//         }
+//         </>
+//     )
+// }
 
 
 function Desktop() {
