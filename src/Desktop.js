@@ -26,20 +26,20 @@ import { Context } from './store/Context'
 import photo from './images/spine.jpg'
 
 // props: image
-// function FloatImageCol(props) {
-//     return (
-//         <Col span={12}>
-//             <Row justify='center'>
-//             <motion.div 
-//                     initial={{y: 300, opacity: 0}} 
-//                     whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
-//                     viewport={{once: true}}>
-//                 <Image height={400} preview={false} src={props.image} style={{'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></Image>
-//             </motion.div>
-//             </Row>
-//         </Col>
-//     )
-// }
+function FloatImageCol(props) {
+    return (
+        <Col span={12}>
+            <Row justify='center'>
+            <motion.div 
+                    initial={{y: 300, opacity: 0}} 
+                    whileInView={{y: 0, opacity: 1, transition: {type: 'spring', bounce: 0, duration: 1}}} 
+                    viewport={{once: true}}>
+                <Image height={400} preview={false} src={props.image} style={{'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></Image>
+            </motion.div>
+            </Row>
+        </Col>
+    )
+}
 
 // props title, text
 function FloatTextCol(props) {
