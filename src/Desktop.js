@@ -65,16 +65,16 @@ function FloatTextCol(props) {
 }
 
 // props: sectionItem, backgroundColor
-function SectionItemImageOnTheLeft(props) {
-    return (
-        <Row justify='center' align='middle' style={{'backgroundColor': props.backgroundColor, 'height': '700px', 'padding': '100px'}}>
-            <Row justify='center' align='middle' style={{'maxWidth': '2000px'}}>
-                <FloatImageCol image={props.sectionItem.image} />
-                <FloatTextCol title={props.sectionItem.title} text={props.sectionItem.text} />
-            </Row>
-        </Row>
-    )
-}
+// function SectionItemImageOnTheLeft(props) {
+//     return (
+//         <Row justify='center' align='middle' style={{'backgroundColor': props.backgroundColor, 'height': '700px', 'padding': '100px'}}>
+//             <Row justify='center' align='middle' style={{'maxWidth': '2000px'}}>
+//                 <FloatImageCol image={props.sectionItem.image} />
+//                 <FloatTextCol title={props.sectionItem.title} text={props.sectionItem.text} />
+//             </Row>
+//         </Row>
+//     )
+// }
 
 // props: sectionItem, backgroundColor
 function SectionItemImageOnTheRight(props) {
