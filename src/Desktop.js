@@ -103,7 +103,7 @@ import photo from './images/spine.jpg'
 
 
 function Desktop() {
-    // const {state, dispatch} = useContext(Context)
+    const {state} = useContext(Context)
 
     return (
         <Layout style={{'minWidth': '1000px'}}>
