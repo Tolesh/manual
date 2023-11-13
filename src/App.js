@@ -3,9 +3,7 @@ import './App.css'
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 
 import Desktop from './Desktop'
-import Cookies from './policy/cookies'
-import Privacy from './policy/privacy'
-import Terms from './policy/terms'
+
 
 
 import {
@@ -23,10 +21,7 @@ import {
 
 function RouteElementsDesktop() {
   const routeElements = useRoutes([
-    { path: '/', element: <Desktop /> },
-    { path: '/policy/cookies', element: <Cookies /> },
-    { path: '/policy/privacy', element: <Privacy /> },
-    { path: '/policy/terms', element: <Terms /> },
+    { path: '/', element: <Desktop /> }
   ]);
   return routeElements
 }
