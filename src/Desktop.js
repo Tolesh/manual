@@ -4,15 +4,9 @@ import {
     Row,
     Col,
     Affix,
-    Image,
-    Button,
-    Tooltip,
-    Popover,
+    Image
 } from 'antd'
 
-import {
-    DownloadOutlined,
-} from '@ant-design/icons'
 
 import {
     motion,
@@ -77,16 +71,16 @@ function FloatTextCol(props) {
 // }
 
 // props: sectionItem, backgroundColor
-function SectionItemImageOnTheRight(props) {
-    return (
-        <Row justify='center' align='middle' style={{'backgroundColor': props.backgroundColor, 'height': '700px', 'padding': '100px'}}>
-            <Row justify='center' align='middle' style={{'maxWidth': '2000px'}}>
-                <FloatTextCol title={props.sectionItem.title} text={props.sectionItem.text} />
-                <FloatImageCol image={props.sectionItem.image} />
-            </Row>
-        </Row>
-    )
-}
+// function SectionItemImageOnTheRight(props) {
+//     return (
+//         <Row justify='center' align='middle' style={{'backgroundColor': props.backgroundColor, 'height': '700px', 'padding': '100px'}}>
+//             <Row justify='center' align='middle' style={{'maxWidth': '2000px'}}>
+//                 <FloatTextCol title={props.sectionItem.title} text={props.sectionItem.text} />
+//                 <FloatImageCol image={props.sectionItem.image} />
+//             </Row>
+//         </Row>
+//     )
+// }
 
 // props: sectionList
 // function SectionList(props) {
